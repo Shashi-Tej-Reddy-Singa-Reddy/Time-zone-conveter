@@ -1,4 +1,4 @@
-window.TIME_ZONE_PLACES = [
+export const TIME_ZONE_PLACES = [
   {
     "tz": "Africa/Abidjan",
     "countries": [

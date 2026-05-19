@@ -1,67 +1,12 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Time Zoner — Instant Time Match</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Zoner - Instant Time Match</title>
   </head>
   <body>
-    <header class="header">
-      <h1>Time Zoner</h1>
-      <p class="subtitle">Find where another local time aligns with your time</p>
-    </header>
-
-    <main class="container">
-      <section class="panel">
-        <h2>Your Local Time</h2>
-        <div class="slider-row">
-          <label for="localMinute">Time here</label>
-          <input id="localMinute" type="range" min="0" max="1410" step="30" />
-          <output id="localMinuteLabel">--:--</output>
-        </div>
-        <p class="meta">Detected location: <span id="localLocation">(loading...)</span></p>
-        <p class="meta">Detected time zone: <span id="localTz">(loading...)</span></p>
-      </section>
-
-      <section class="panel">
-        <h2>Target Time In Other Places</h2>
-        <div class="slider-row">
-          <label for="targetMinute">Time there</label>
-          <input id="targetMinute" type="range" min="0" max="1410" step="30" />
-          <output id="targetMinuteLabel">--:--</output>
-        </div>
-      </section>
-
-      <section class="results panel">
-        <div class="results-header">
-          <h2>Matches</h2>
-          <div class="summary">
-            <span id="resultCount">0</span> places match
-          </div>
-        </div>
-
-        <div class="legend">
-          <span class="chip">Place</span>
-          <span class="chip">City</span>
-          <span class="chip">Time Zone</span>
-          <span class="chip">Country</span>
-          <span class="chip">Time</span>
-          <span class="chip">Date Diff</span>
-        </div>
-
-        <div id="results"></div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <p>
-        At the same instant as your selected local time, these places show the
-        selected target time. Results use your current date and DST rules.
-      </p>
-    </footer>
-
-    <script src="time-zone-data.js"></script>
-    <script src="script.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
-  </html>
+</html>

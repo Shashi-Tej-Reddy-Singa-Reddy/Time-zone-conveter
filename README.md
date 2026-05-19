@@ -1,20 +1,14 @@
 # Time Zoner
 
-A tiny, static time-zone matcher. Pick a local time and a target time in 30-minute steps, and it lists the places where, at the same instant, the local time-of-day equals your target.
+A React time-zone matcher. Pick a local time and a target time in 30-minute steps, and it lists the places where, at the same instant, the local time-of-day equals your target.
 
 ## Run
 
-Open the page directly:
-
-- Double-click `index.html` or right-click and open in your browser.
-
-Or serve locally (prevents any cross-origin quirks):
+Install dependencies, then start the Vite dev server:
 
 ```sh
-# macOS has Python 3 — run a quick server
-cd "time zoner"
-python3 -m http.server 8080
-# then visit http://localhost:8080/
+npm install
+npm run dev
 ```
 
 ## Notes
